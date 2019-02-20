@@ -11,7 +11,7 @@ body {
 }
 
 header {
-  padding: 20px;
+  margin: 40px 0px;
 }
 
 header h1 {
@@ -24,18 +24,19 @@ div.score-board {
   height: 300px;
   margin-bottom: 30px;
   color: #b33939;
+  font-size: 100px
 }
 
 div.score-board div {
   display: inline;
   line-height: 300px;
   font-family: 'Raleway Dots', cursive;
-  font-size: 50px
 }
 
 div.user, div.computer {
   height: 300px;
   width: 33%;
+  font-size: .5em;
 }
 
 div.user {
@@ -44,6 +45,10 @@ div.user {
 
 div.computer {
   float: right
+}
+
+div.score {
+  font-size: 1em;
 }
 
 div.result-message {
