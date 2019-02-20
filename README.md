@@ -6,7 +6,7 @@ Rock Paper Scissors Game
 * **Kaiji JaJanKen Cards**
 * **Score points**
 
-![alt text](https://github.com/SimoMazil/MemoryCardChallenge/blob/master/images/ScreenShot.png)
+![alt text](https://github.com/SimoMazil/Rock-Paper-Scissors-Game/blob/master/images/ScreenShot.png)
 
 ## Usage
 
