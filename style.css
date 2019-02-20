@@ -57,6 +57,10 @@ div.result-message {
   font-size: 22px
 }
 
+div.result-message div {
+  display: inline;
+}
+
 div.cards {
   margin: 20px auto;
   height: 300px;

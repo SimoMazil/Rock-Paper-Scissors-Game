@@ -43,15 +43,28 @@ function theGameResult(userCard) {
 function userWins(challengedCards) {
   userScore++
   user_score.innerHTML = userScore
-  result_message.innerHTML = `${challengedCards}, You won !`
+  result_message.innerHTML = `${challengedCards}`
+  checkScore()
 }
 
 function computerWins(challengedCards) {
   computerScore++
   computer_score.innerHTML = computerScore
-  result_message.innerHTML = `${challengedCards}, You lose !`
+  result_message.innerHTML = `${challengedCards}`
+  checkScore()
 }
 
 function draw(challengedCards) {
-  result_message.innerHTML = `${challengedCards}, It's a draw !`
+  result_message.innerHTML = `${challengedCards}`
+}
+
+function checkScore() {
+  if(userScore == 3 || computerScore == 3) {
+    allCards.forEach(card => card.removeEventListener('click', chooseCard))
+    if(userScore == 3) {
+      result_message.innerHTML = `🥳 Congratulations ! you won the game. 🥳`
+    } else {
+      result_message.innerHTML = `🙈 Sorry ! you lost the game. 🙈`
+    }
+  }
 }
